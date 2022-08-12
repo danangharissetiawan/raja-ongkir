@@ -2,7 +2,7 @@
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from api_endpoint.client import BaseClient
+    from rajaongkir.client import BaseClient
 
 class Endpoint:
     def __init__(self, base: "BaseClient") -> None:

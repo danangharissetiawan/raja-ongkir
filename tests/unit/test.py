@@ -8,7 +8,7 @@ base_dir = os.path.join(current_dir, os.pardir, os.pardir)
 sys.path.append(base_dir)
 
 
-from api_endpoint import Client
+from rajaongkir import Client
 
 
 api_key = (dotenv_values('.env')['TOKEN'] if os.path.exists('.aa') else "04c24e424c1ff3be86283cec5982fd02")

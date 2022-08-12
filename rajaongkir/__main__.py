@@ -1,6 +1,6 @@
 import sys
 
-from api_endpoint import Client
+from rajaongkir import Client
 
 def main() -> None:
     
