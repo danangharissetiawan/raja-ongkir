@@ -49,7 +49,7 @@
     city = client.cities.query(city_id=1, province_id=1)
 
     # Get calculate cost data
-    cost = client.costs.calculate(origin=501, destination=114, weight=1000, courier='jne')
+    cost = client.costs.query(origin=501, destination=114, weight=1000, courier='jne')
     
     # print cost data
     print(cost)
