@@ -49,7 +49,7 @@
     city = {
             'city_id': 55, 'province_id': 9
     }
-    city = self.api.cities.query(city_id = city['city_id'], province_id = city['province_id'])
+    city = client.cities.query(city_id = city['city_id'], province_id = city['province_id'])
 
     # Get calculate cost data
     cost = client.costs.query(origin=55, destination=23, weight=1000, courier="jne")
