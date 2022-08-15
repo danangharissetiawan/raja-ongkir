@@ -37,19 +37,22 @@
     provinces = client.provinces.list()
 
     # Get province detail data
-    province = client.provinces.query(province_id=1)
+    province = client.provinces.query(province_id=9)
 
     # Get all city data
     cities = client.cities.list()
 
     # Get city data by province id
-    cities = client.cities.query(province_id=1)
+    cities = client.cities.query(province_id=9)
 
     # Get ciry data by city id and province id
-    city = client.cities.query(city_id=1, province_id=1)
+    city = {
+            'city_id': 55, 'province_id': 9
+    }
+    city = self.api.cities.query(city_id = city['city_id'], province_id = city['province_id'])
 
     # Get calculate cost data
-    cost = client.costs.query(origin=501, destination=114, weight=1000, courier='jne')
+    cost = client.costs.query(origin=55, destination=23, weight=1000, courier="jne")
     
     # print cost data
     print(cost)
